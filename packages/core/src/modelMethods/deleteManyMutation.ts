@@ -36,7 +36,7 @@ export const AMModelDeleteManyMutationFieldFactory: IAMMethodFieldFactory = {
             schemaInfo.resolveFactoryType(
               modelType,
               isInterfaceType(modelType)
-                ? AMInterfaceWhereTypeFactory
+                ? AMWhereTypeFactory //AMInterfaceWhereTypeFactory
                 : AMWhereTypeFactory
             )
           ),

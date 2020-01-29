@@ -42,7 +42,7 @@ export const AMModelUpdateMutationFieldFactory: IAMMethodFieldFactory = {
             schemaInfo.resolveFactoryType(
               modelType,
               isInterfaceType(modelType)
-                ? AMInterfaceWhereUniqueTypeFactory
+                ? AMWhereUniqueTypeFactory //AMInterfaceWhereUniqueTypeFactory
                 : AMWhereUniqueTypeFactory
             )
           ),

@@ -31,7 +31,7 @@ export const AMModelSingleQueryFieldFactory: IAMMethodFieldFactory = {
           type: schemaInfo.resolveFactoryType(
             modelType,
             isInterfaceType(modelType)
-              ? AMInterfaceWhereUniqueTypeFactory
+              ? AMWhereUniqueTypeFactory //AMInterfaceWhereUniqueTypeFactory
               : AMWhereUniqueTypeFactory
           ),
         },

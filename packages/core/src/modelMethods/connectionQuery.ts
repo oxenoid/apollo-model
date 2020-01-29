@@ -39,7 +39,7 @@ export const AMModelConnectionQueryFieldFactory: IAMMethodFieldFactory = {
           type: schemaInfo.resolveFactoryType(
             modelType,
             isInterfaceType(modelType)
-              ? AMInterfaceWhereTypeFactory
+              ? AMWhereTypeFactory //AMInterfaceWhereTypeFactory
               : AMWhereTypeFactory
           ),
         },

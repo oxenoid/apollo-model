@@ -35,7 +35,7 @@ export const AMModelDeleteOneMutationFieldFactory: IAMMethodFieldFactory = {
             schemaInfo.resolveFactoryType(
               modelType,
               isInterfaceType(modelType)
-                ? AMInterfaceWhereUniqueTypeFactory
+                ? AMWhereUniqueTypeFactory //AMInterfaceWhereUniqueTypeFactory
                 : AMWhereUniqueTypeFactory
             )
           ),
