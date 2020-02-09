@@ -1,6 +1,6 @@
 {
   "name": "@apollo-model/acl",
-  "version": "0.6.0-alpha.44",
+  "version": "0.6.0-alpha.46",
   "description": "",
   "main": "lib/index.js",
   "files": [
@@ -18,7 +18,7 @@
     "@apollo-model/core": "0.6.0-alpha.44",
     "@apollo-model/graphql-tools": "4.0.6",
     "@apollo-model/mongodb-executor": "0.6.0-alpha.32",
-    "@apollo-model/schema-filter": "0.6.0-alpha.43",
+    "@apollo-model/schema-filter": "0.6.0-alpha.46",
     "@apollo-model/type-wrap": "0.6.0-alpha.44",
     "@apollo/federation": "^0.7.0",
     "apollo-server": "^2.7.0",
