@@ -300,7 +300,8 @@ export default (
     }
     case GET_MANY:
       if (introspection) {
-        const getManyType = introspection.getGetManyWhereType(resource.type.name);
+        const queryName = introspectionResults.resources.find(el => el.type.name === resource.type.name).GET_MANY.name;
+        const getManyType = introspection.getGetOneWhereType(queryName);
         const paramsIdsToIdIn = params.ids ? renameKey('ids', 'id_in', params) : params;
         const getManyWhere = transformInput(paramsIdsToIdIn, getManyType);
         return {

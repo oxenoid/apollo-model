@@ -50,11 +50,11 @@ export class IntrospectionResult {
     ) as GraphQLInputObjectType;
   }
 
-  getGetOneWhereType(resourceName: string) {
+  getGetOneWhereType(queryTypeName: string) {
     return getNamedType(
       this.getQueryType()
         .getFields()
-        [_.camelCase(resourceName)].args.find(R.propEq('name', 'where')).type
+        [_.camelCase(queryTypeName)].args.find(R.propEq('name', 'where')).type
     ) as GraphQLInputObjectType;
   }
 
